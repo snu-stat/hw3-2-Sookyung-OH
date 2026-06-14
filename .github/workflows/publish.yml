@@ -24,7 +24,7 @@ jobs:
 
       - name: Install R packages
         run: |
-          Rscript -e "install.packages(c('tidyverse','Lahman','NHANES','mosaic','reticulate','MASS'), repos='https://cloud.r-project.org')"
+          Rscript -e "install.packages(c('rmarkdown','tidyverse','Lahman','NHANES','mosaic','reticulate','MASS'), repos='https://cloud.r-project.org')"
 
       - name: Render Quarto
         run: quarto render hw03.qmd
