@@ -8,4 +8,4 @@
 
 * [분석 리포트 (HTML)](./hw03.html)
 
-* [주피터 노트북 (ipynb)](https://mybinder.org/v2/gh/snu-stat/hw3-2-Sookyung-OH/gh-pages?filepath=hw03.ipynb)
+* [주피터 노트북 (ipynb)](https://mybinder.org/v2/gh/snu-stat/hw3-2-Sookyung-OH/main?filepath=hw03.ipynb)
