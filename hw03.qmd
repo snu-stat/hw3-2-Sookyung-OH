@@ -997,9 +997,24 @@ EXPOSE 8888
 
 ### 답안
 
+완료
+
 ## 문제 3-2. GitHub Actions 워크플로우 수정
 
 숙제 2에서 만들었던 `publish.yml`을 수정하여 기존의 배포 단계 끝에 Docker 컨테이너 이미지를 빌드하고 Github Container Registry (GHCR)에 푸시하는 단계를 추가한다.
+
+### 답안
+
+숙제 2에서 사용한 publish.yml에 Docker 이미지 빌드 및 GHCR 업로드 단계를 추가하였다.
+
+GitHub Actions는 정상적으로 실행되었으며 Docker 이미지 빌드까지 성공하였다. 다만 저장소가 GitHub Classroom 조직(snu-stat)에 속해 있어 GHCR package write 권한이 부여되지 않아 image push 단계에서
+
+permission_denied: write_package
+
+오류가 발생하였다.
+
+따라서 workflow는 구현되었으나 조직 권한 설정으로 인해 GHCR 업로드는 완료되지 않았다.
+
 
 ```{yml}
 # ... (기존 Quarto Render 단계 이후)
@@ -1021,7 +1036,11 @@ EXPOSE 8888
 
 ### 답안
 
+완료
+
 ## 문제 3-3. GitHub Pages에 Binder 링크 추가
+
+완료
 
 GitHub Page를 사용하여 저장소를 웹페이지로 활용하는 부분은 숙제 2에서와 같다.
 
@@ -1045,3 +1064,4 @@ GitHub Page를 사용하여 저장소를 웹페이지로 활용하는 부분은 
 
 ### 답안
 
+완료
